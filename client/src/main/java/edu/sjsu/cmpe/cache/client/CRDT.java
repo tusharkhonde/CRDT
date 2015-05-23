@@ -48,7 +48,6 @@ public class CRDT {
 		final ArrayList<CacheServiceInterface> writtenServerList = new ArrayList<CacheServiceInterface>(3);
 
 		for (final CacheServiceInterface cacheServer : serverList) {
-			//System.out.println("Task Started...." + cacheServer.returnURL());
 			System.out.println("Putting values to ..." + cacheServer.returnURL());
 
 			Future<HttpResponse<JsonNode>> future = Unirest
